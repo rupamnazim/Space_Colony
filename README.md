@@ -11,7 +11,7 @@ Missions: Sending pairs of crew members on turn-based, cooperative missions agai
 Permadeath: Crew members who lose all energy during a mission are permanently removed from the colony.
 
 2. Class Diagram
-![Class Diagram](CrewMember\ Management\ System-2026-07-15-123951.png)
+![Class Diagram](classd.png)
 
 3. Implemented Features
 The project implements all mandatory requirements and several bonus features:
