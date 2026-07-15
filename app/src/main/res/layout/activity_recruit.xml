@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_dark"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:background="#EDEAEA"
+            android:backgroundTint="#FFFFFF"
+            android:text="Recruit Crew Member"
+            android:textColor="@color/cyan_accent"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            app:boxStrokeColor="@color/cyan_accent"
+            app:hintTextColor="@color/cyan_accent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/recruit_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#EDEAEA"
+                android:backgroundTint="#FFFFFF"
+                android:hint="Crew Member Name"
+                android:inputType="textPersonName"
+                android:textColor="@color/background_dark" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="#EDEAEA"
+            android:backgroundTint="#FFFFFF"
+            android:text="Select Specialization"
+            android:textColor="@color/background_dark"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/spec_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
+
+            <RadioButton
+                android:id="@+id/radio_pilot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#EDEAEA"
+                android:backgroundTint="#FFFFFF"
+                android:buttonTint="@color/pilot_blue"
+                android:padding="8dp"
+                android:text="Pilot"
+                android:textColor="@color/pilot_blue"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/radio_engineer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#EDEAEA"
+                android:backgroundTint="#FFFFFF"
+                android:buttonTint="@color/engineer_yellow"
+                android:padding="8dp"
+                android:text="Engineer"
+                android:textColor="@color/engineer_yellow"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/radio_medic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#EDEAEA"
+                android:backgroundTint="#FFFFFF"
+                android:buttonTint="@color/medic_green"
+                android:padding="8dp"
+                android:text="Medic"
+                android:textColor="@color/medic_green"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/radio_scientist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#EDEAEA"
+                android:backgroundTint="#FFFFFF"
+                android:buttonTint="@color/scientist_purple"
+                android:padding="8dp"
+                android:text="Scientist"
+                android:textColor="@color/scientist_purple"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/radio_soldier"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#EDEAEA"
+                android:backgroundTint="#FFFFFF"
+                android:buttonTint="@color/soldier_red"
+                android:padding="8dp"
+                android:text="Soldier"
+                android:textColor="@color/soldier_red"
+                android:textSize="16sp" />
+        </RadioGroup>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="28dp"
+            app:cardBackgroundColor="@color/surface_dark"
+            app:cardCornerRadius="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:background="#EDEAEA"
+                    android:backgroundTint="#FFFFFF"
+                    android:text="Stats Preview"
+                    android:textColor="@color/cyan_accent"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/stats_preview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#EDEAEA"
+                    android:backgroundTint="#FFFFFF"
+                    android:text="Skill: 5  |  Resilience: 4  |  Energy: 20"
+                    android:textColor="@color/background_dark"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_cancel"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:background="#EDEAEA"
+                android:backgroundTint="#FFFFFF"
+                android:text="Cancel" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_create"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:background="#EDEAEA"
+                android:backgroundTint="#FFFFFF"
+                android:text="Recruit"
+                app:cornerRadius="8dp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

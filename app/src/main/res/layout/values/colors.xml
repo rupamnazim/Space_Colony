@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Space Colony Theme -->
+    <color name="background_dark">#FF0D1B2A</color>
+    <color name="surface_dark">#FF1B2838</color>
+    <color name="surface_light">#FF243447</color>
+    <color name="cyan_accent">#FF00BCD4</color>
+    <color name="text_primary">#FFE0E0E0</color>
+    <color name="text_secondary">#FF9E9E9E</color>
+
+    <!-- Specialization Colors -->
+    <color name="pilot_blue">#FF2196F3</color>
+    <color name="engineer_yellow">#FFFFC107</color>
+    <color name="medic_green">#FF4CAF50</color>
+    <color name="scientist_purple">#FF9C27B0</color>
+    <color name="soldier_red">#FFF44336</color>
+    <color name="threat_orange">#FFFF5722</color>
+
+    <!-- Energy bar -->
+    <color name="energy_high">#FF4CAF50</color>
+    <color name="energy_low">#FFF44336</color>
+</resources>
