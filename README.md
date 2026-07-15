@@ -28,4 +28,8 @@ Crew Recovery: Energy restoration when returning to Quarters.
 RecyclerView: Used for efficient list display in all management screens.  
 Unique Visuals: Custom icons and color-coded themes for each specialization.  
 Scaling Difficulty: Threats grow stronger as the number of completed missions increases.  
-Energy Cost in Simulator: Training consumes energy, creating a meaningful resource loop.  
+Energy Cost in Simulator: Training consumes energy, creating a meaningful resource loop.
+
+## AI Disclaimer
+Gemini was used in helping to understand the initial structure of the code and brainstorming.  
+Gemini assistant in Android Studio was used in identifying and resolving Android Manifest configuration issues and missing resource errors.
